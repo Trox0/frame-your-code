@@ -8,9 +8,19 @@ import { useEffect, useState } from "react"
 
 export function HeroSection() {
   const [mounted, setMounted] = useState(false)
+  const [currentWordIndex, setCurrentWordIndex] = useState(0)
+  const words = ["Websites", "Applications", "AI Automations"]
 
   useEffect(() => {
     setMounted(true)
+  }, [])
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentWordIndex((prev) => (prev + 1) % words.length)
+    }, 3000) // Change word every 3 seconds
+
+    return () => clearInterval(interval)
   }, [])
 
   return (
@@ -28,15 +38,22 @@ export function HeroSection() {
         </p>
 
         <h1
-          className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-8 text-balance transition-all duration-700 delay-100 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+          className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-8 transition-all duration-700 delay-100 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
-          We Build{" "}
-          <span className="text-purple-500 inline-block hover:scale-105 transition-transform duration-300">
-            Intelligent Systems
-          </span>{" "}
-          That Work for Your{" "}
-          <span className="text-purple-500 inline-block hover:scale-105 transition-transform duration-300">
-            Business
+          <span className="block">We Build</span>
+          <span className="text-purple-500 block relative h-[1.2em] my-2">
+            <span
+              key={currentWordIndex}
+              className="absolute left-1/2 -translate-x-1/2 animate-[fadeInOut_3s_ease-in-out] whitespace-nowrap"
+            >
+              {words[currentWordIndex]}
+            </span>
+          </span>
+          <span className="block">
+            That Work for Your{" "}
+            <span className="text-purple-500 inline-block hover:scale-105 transition-transform duration-300">
+              Business
+            </span>
           </span>
         </h1>
 
