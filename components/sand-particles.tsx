@@ -33,7 +33,7 @@ export function SandParticles() {
     }
 
     const initParticles = () => {
-      const particleCount = Math.floor((canvas.width * canvas.height) / 6667) // Increased particle count by 20% (8000 -> 6667)
+      const particleCount = Math.floor((canvas.width * canvas.height) / 5128) // Increased particle count by additional 30% (from 6667 to 5128)
       particlesRef.current = []
 
       for (let i = 0; i < particleCount; i++) {
