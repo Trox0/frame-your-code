@@ -1,6 +1,6 @@
 "use client"
 
-import { Bot, Phone, Workflow, Globe, Code } from "lucide-react"
+import { Bot, Phone, Workflow, Globe, Code, Video } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 const services = [
@@ -28,6 +28,11 @@ const services = [
     icon: Workflow,
     title: "AI Outreach & Automation",
     description: "AI-powered inbound and outbound workflows for lead qualification and follow-ups.",
+  },
+  {
+    icon: Video,
+    title: "AI Video & Content Editing",
+    description: "High-impact short-form content, AI-generated videos, and professional editing tailored for social growth.",
   },
 ]
 
