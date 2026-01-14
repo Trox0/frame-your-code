@@ -24,7 +24,7 @@ export function HeroSection() {
   }, [])
 
   return (
-    <section className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden">
+    <section className="relative min-h-screen flex items-center justify-center pt-20 pb-24 overflow-hidden">
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
@@ -58,7 +58,7 @@ export function HeroSection() {
         </h1>
 
         <p
-          className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-12 text-balance transition-all duration-500 delay-150 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
+          className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 text-balance transition-all duration-500 delay-150 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
           FrameYourCode designs and develops <span className="text-purple-400">websites</span>,{" "}
           <span className="text-purple-400">applications</span>, and{" "}
@@ -92,7 +92,7 @@ export function HeroSection() {
 
       {/* Scroll indicator */}
       <div
-        className={`hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 transition-all duration-500 delay-300 ${mounted ? "opacity-100" : "opacity-0"}`}
+        className={`hidden md:flex absolute bottom-8 left-1/2 -translate-x-1/2 z-40 transition-all duration-500 delay-300 ${mounted ? "opacity-100" : "opacity-0"}`}
       >
         <div className="w-6 h-10 border-2 border-muted-foreground/30 rounded-full flex justify-center">
           <div className="w-1.5 h-3 bg-purple-500 rounded-full mt-2 animate-bounce" />
