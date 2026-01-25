@@ -1,6 +1,6 @@
-# FrameYourCode | AI Solutions & Software Development Agency
+# The Code Lawyers | Engineering Precision & AI Integrity
 
-FrameYourCode designs and develops websites, applications, and AI-powered systems that automate conversations, capture leads, and scale operations.
+The Code Lawyers provide disciplined software engineering and responsible AI deployment. We focus on correctness, explainability, and robust guardrails for enterprise systems.
 
 ## Features
 

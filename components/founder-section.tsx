@@ -50,11 +50,9 @@ export function FounderSection() {
             <h3 className="text-2xl md:text-3xl font-semibold text-foreground mb-2">
               <span className="text-purple-500">Yashwant Pandey</span>
             </h3>
-            <p className="text-muted-foreground mb-6">Founder, FrameYourCode</p>
+            <p className="text-muted-foreground mb-6">Principal Architect, The Code Lawyers</p>
             <p className="text-foreground leading-relaxed text-balance">
-              FrameYourCode was started with a simple goal.To build <span className="text-purple-400">software</span>{" "}
-              and <span className="text-purple-400">AI systems</span> that actually solve business problems, not just
-              look good on paper.
+              The Code Lawyers was founded to bring <span className="text-purple-400 font-medium">absolute discipline</span> to digital engineering. We build software and AI systems that serve as <span className="text-purple-400 font-medium">strategic assets</span>, prioritizing structural integrity and long-term value above all.
             </p>
           </div>
         </div>

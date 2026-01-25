@@ -4,11 +4,11 @@ import { CheckCircle } from "lucide-react"
 import { useEffect, useRef, useState } from "react"
 
 const reasons = [
-  "Built systems, not just designs",
-  "Practical AI implementations",
-  "Clear communication and transparency",
-  "Founder-led, quality-focused execution",
-  "Scalable and future-ready solutions",
+  "Absolute Code Correctness",
+  "Model Explainability",
+  "Safety Guardrails",
+  "Responsible AI Deployment",
+  "Scalable Defensive Architecture",
 ]
 
 export function WhyUsSection() {
@@ -39,14 +39,13 @@ export function WhyUsSection() {
           <div
             className={`transition-all duration-500 ${isVisible ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-8"}`}
           >
-            <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">Why FrameYourCode</p>
+            <p className="text-sm uppercase tracking-widest text-muted-foreground mb-4">The Code Lawyers Advantage</p>
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-semibold tracking-tight text-foreground mb-8 text-balance">
-              We build <span className="text-purple-500">systems</span> that actually{" "}
-              <span className="text-purple-500">work</span>.
+              Built for <span className="text-purple-500">performance</span>. Engineered for{" "}
+              <span className="text-purple-500">scale</span>.
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Our focus is on delivering practical, scalable solutions that solve real business problems. No fluff, no
-              gimmicks — just quality work that drives results.
+              We deliver systems where quality is non-negotiable. In an era of rapid deployment, we provide the strategic discipline required for stable, defensible digital infrastructure.
             </p>
           </div>
 

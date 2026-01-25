@@ -74,10 +74,9 @@ export function SpaceBackground() {
       {/* Scrolling spaceship */}
       <div
         ref={rocketRef}
-        className="fixed right-4 md:right-8 z-20 transition-transform duration-100 ease-out pointer-events-none scale-75 md:scale-100 origin-center"
+        className="fixed right-4 md:right-8 z-20 pointer-events-none scale-75 md:scale-100 origin-center transition-all duration-700 ease-[cubic-bezier(0.33,1,0.68,1)]"
         style={{
-          top: `${Math.max(100, rocketY)}px`,
-          transform: `rotate(${180 + scrollProgress * 0}deg)`,
+          transform: `translateY(${Math.max(100, rocketY)}px) rotate(180deg)`,
         }}
       >
         <div className="relative">

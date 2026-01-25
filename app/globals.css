@@ -3,7 +3,7 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/* Dark premium theme for FrameYourCode */
+/* Dark premium theme for The Code Lawyers */
 :root {
   --background: oklch(0.09 0 0);
   --foreground: oklch(0.98 0 0);
@@ -85,6 +85,7 @@
   * {
     @apply border-border outline-ring/50;
   }
+
   body {
     @apply bg-background text-foreground;
   }
@@ -101,14 +102,17 @@ html {
     opacity: 0;
     transform: translateY(10px);
   }
+
   10% {
     opacity: 1;
     transform: translateY(0);
   }
+
   90% {
     opacity: 1;
     transform: translateY(0);
   }
+
   100% {
     opacity: 0;
     transform: translateY(-10px);

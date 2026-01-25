@@ -2,15 +2,16 @@ import type React from "react"
 import type { Metadata } from "next"
 import { Inter, Geist_Mono } from "next/font/google"
 import { Analytics } from "@vercel/analytics/next"
+import { SandParticles } from "@/components/sand-particles"
 import "./globals.css"
 
 const _inter = Inter({ subsets: ["latin"] })
 const _geistMono = Geist_Mono({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "FrameYourCode | AI Solutions & Software Development Agency",
+  title: "The Code Lawyers | Engineering Precision & AI Integrity",
   description:
-    "FrameYourCode designs and develops websites, applications, and AI-powered systems that automate conversations, capture leads, and scale operations.",
+    "The Code Lawyers provide disciplined software engineering and responsible AI deployment. We focus on correctness, explainability, and robust guardrails for enterprise systems.",
   generator: "v0.app",
   icons: {
     icon: [
@@ -39,6 +40,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`font-sans antialiased overflow-x-hidden`}>
+        <SandParticles />
         {children}
         <Analytics />
       </body>

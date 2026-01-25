@@ -21,7 +21,7 @@ export function Header() {
       <div className="max-w-7xl mx-auto px-6 py-4">
         <nav className="flex items-center justify-between">
           <Link href="/" className="text-xl font-semibold tracking-tight text-foreground">
-            FrameYourCode
+            The Code Lawyers
           </Link>
 
           {/* Desktop Navigation */}

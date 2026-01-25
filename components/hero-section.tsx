@@ -28,19 +28,17 @@ export function HeroSection() {
       {/* Subtle grid background */}
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.02)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.02)_1px,transparent_1px)] bg-[size:64px_64px]" />
 
-      <SandParticles />
-
       <div className="relative z-30 max-w-5xl mx-auto px-4 md:px-6 text-center">
         <p
           className={`text-sm uppercase tracking-widest text-muted-foreground mb-6 transition-all duration-500 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
-          Technology & AI Solutions
+          Digital Excellence
         </p>
 
         <h1
           className={`text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-semibold tracking-tight text-foreground mb-8 transition-all duration-500 delay-100 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
-          <span className="block">We Build</span>
+          <span className="block">We Architect</span>
           <span className="text-purple-500 block relative h-[1.2em] my-2">
             <span
               key={currentWordIndex}
@@ -49,21 +47,12 @@ export function HeroSection() {
               {words[currentWordIndex]}
             </span>
           </span>
-          <span className="block">
-            That Work for Your{" "}
-            <span className="text-purple-500 inline-block hover:scale-105 transition-transform duration-300">
-              Business
-            </span>
-          </span>
         </h1>
 
         <p
           className={`text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto mb-8 text-balance transition-all duration-500 delay-150 ${mounted ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"}`}
         >
-          FrameYourCode designs and develops <span className="text-purple-400">websites</span>,{" "}
-          <span className="text-purple-400">applications</span>, and{" "}
-          <span className="text-purple-400">AI-powered systems</span> that automate conversations, capture leads, and
-          scale operations.
+          Specializing in <span className="text-purple-400 font-medium">High-Performance Websites</span>, <span className="text-purple-400 font-medium">Custom Applications</span>, and <span className="text-purple-400 font-medium">Strategic AI Solutions</span>.
         </p>
 
         <div
