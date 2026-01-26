@@ -47,14 +47,13 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center gap-8" role="menubar">
+          <div className="hidden md:flex items-center gap-8">
             {navLinks.map((link) => (
               <Link
                 key={link.href}
                 href={link.href}
                 className="text-sm text-muted-foreground hover:text-purple-400 transition-colors relative group"
                 aria-label={link.ariaLabel}
-                role="menuitem"
               >
                 {link.label}
                 {/* Underline animation */}
@@ -94,11 +93,10 @@ export function Header() {
 
         {/* Mobile Navigation */}
         {isMenuOpen && (
-          <div 
+          <nav 
             id="mobile-navigation"
             className="md:hidden py-4 border-t border-border mt-4"
-            role="menu"
-            aria-label="Mobile navigation menu"
+            aria-label="Mobile navigation"
           >
             <div className="flex flex-col gap-4">
               {navLinks.map((link) => (
@@ -108,7 +106,6 @@ export function Header() {
                   className="text-sm text-muted-foreground hover:text-purple-400 transition-colors py-2"
                   onClick={() => setIsMenuOpen(false)}
                   aria-label={link.ariaLabel}
-                  role="menuitem"
                 >
                   {link.label}
                 </Link>
@@ -132,7 +129,7 @@ export function Header() {
                 </Link>
               </Button>
             </div>
-          </div>
+          </nav>
         )}
       </div>
     </header>

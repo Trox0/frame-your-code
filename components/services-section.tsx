@@ -94,9 +94,9 @@ export function ServicesSection() {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6" role="list">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
           {services.map((service, index) => (
-            <div
+            <article
               key={index}
               className={`group cursor-pointer relative ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-12"}`}
               style={{ transitionDelay: `${index * 100}ms` }}
@@ -151,7 +151,7 @@ export function ServicesSection() {
                   }}
                 />
               </div>
-            </div>
+            </article>
           ))}
         </div>
       </div>

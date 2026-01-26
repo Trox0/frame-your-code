@@ -88,8 +88,11 @@ export function FounderSection() {
               >
                 <Image
                   src="/images/yashwant-pandey.jpeg"
-                  alt="Yashwant Pandey"
+                  alt="Yashwant Pandey - Founder and Principal Architect of The Code Lawyers"
                   fill
+                  sizes="192px"
+                  quality={80}
+                  priority={false}
                   className="object-cover object-top transition-transform duration-700 group-hover:scale-110"
                 />
                 {/* Overlay gradient */}
