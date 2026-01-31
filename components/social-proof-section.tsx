@@ -63,13 +63,13 @@ export function SocialProofSection() {
   return (
     <section className="py-24 md:py-32 relative overflow-hidden" ref={sectionRef}>
       {/* Animated background gradient */}
-      <div 
+      <div
         className="absolute inset-0 -z-10"
         style={{
           background: 'linear-gradient(135deg, rgba(147,51,234,0.05) 0%, transparent 40%, rgba(79,70,229,0.05) 100%)',
         }}
       />
-      
+
       {/* Decorative borders */}
       <div className="absolute top-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
       <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-purple-500/30 to-transparent" />
@@ -94,7 +94,7 @@ export function SocialProofSection() {
               style={{ transitionDelay: `${200 + index * 150}ms` }}
             >
               {/* Glassmorphism card */}
-              <div 
+              <div
                 className="relative px-8 py-6 rounded-2xl transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
                 style={{
                   background: 'linear-gradient(135deg, rgba(255,255,255,0.06) 0%, rgba(255,255,255,0.02) 100%)',
@@ -105,26 +105,26 @@ export function SocialProofSection() {
                 }}
               >
                 {/* Glow effect on hover */}
-                <div 
+                <div
                   className={`absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-30 transition-opacity duration-500 bg-gradient-to-br ${stat.gradient}`}
                   style={{ filter: 'blur(20px)' }}
                 />
-                
+
                 {/* Stat value with gradient text effect */}
-                <p 
+                <p
                   className={`relative text-4xl md:text-5xl font-bold bg-gradient-to-r ${stat.gradient} bg-clip-text text-transparent transition-transform duration-300 group-hover:scale-110`}
                 >
                   <AnimatedCounter target={stat.value} isVisible={isVisible} />
                   {stat.suffix}
                 </p>
-                
+
                 {/* Label */}
                 <p className="relative text-sm text-muted-foreground mt-2 group-hover:text-foreground/70 transition-colors duration-300">
                   {stat.label}
                 </p>
 
                 {/* Bottom accent line */}
-                <div 
+                <div
                   className={`absolute bottom-0 left-1/2 -translate-x-1/2 w-1/2 h-0.5 rounded-full opacity-0 group-hover:opacity-100 transition-opacity duration-500 bg-gradient-to-r ${stat.gradient}`}
                 />
               </div>

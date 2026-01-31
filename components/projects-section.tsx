@@ -7,20 +7,23 @@ const projects = [
   {
     title: "Student Moderation & Management App",
     description:
-      "A real application built to manage student activity and moderation workflows. Focused on usability, structure, and real-world academic use cases.",
-    image: "/modern-dark-dashboard-with-data-analytics-charts-a.jpg",
+      "A real application to manage student activity and moderation workflows.",
+    image: "/LetsCatchUp.png",
+    techStack: "React Native, Node.js, Couchbase",
     gradient: "from-blue-500/40 to-purple-500/40",
   },
   {
-    title: "Business Website Project",
-    description: "Clean, professional business website with modern UI and responsive design.",
-    image: "/sleek-corporate-website-homepage-dark-theme-with-h.jpg",
+    title: "Crowdfunding DAPP",
+    description: "Crowdfunding platform with modern UI and responsive design.",
+    image: "/CrowdFundingDapp.png",
+    techStack: "Solidity, React, Web3.js",
     gradient: "from-purple-500/40 to-pink-500/40",
   },
   {
-    title: "Corporate Web Platform",
-    description: "Enterprise-grade website with advanced functionality and premium aesthetics.",
-    image: "/enterprise-saas-platform-dashboard-dark-mode-with-.jpg",
+    title: "AI Automation DevOPs workflow",
+    description: "AI automation workflow for DevOps of multiple MNCs.",
+    image: "/AIAutomation.png",
+    techStack: "n8n automations",
     gradient: "from-cyan-500/40 to-purple-500/40",
   },
 ]
@@ -49,13 +52,13 @@ export function ProjectsSection() {
   return (
     <section id="work" className="py-24 md:py-32 relative" ref={sectionRef}>
       {/* Section background with subtle gradient */}
-      <div 
+      <div
         className="absolute inset-0 -z-10"
         style={{
           background: 'linear-gradient(135deg, rgba(147,51,234,0.03) 0%, transparent 50%, rgba(79,70,229,0.03) 100%)',
         }}
       />
-      
+
       <div className="max-w-7xl mx-auto px-6">
         <div
           className={`mb-16 transition-all duration-500 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
@@ -75,7 +78,7 @@ export function ProjectsSection() {
               style={{ transitionDelay: `${index * 150}ms` }}
             >
               {/* Card container with glassmorphism */}
-              <div 
+              <div
                 className="relative rounded-2xl overflow-hidden transition-all duration-500 hover:-translate-y-2 hover:shadow-2xl"
                 style={{
                   background: 'linear-gradient(135deg, rgba(255,255,255,0.05) 0%, rgba(255,255,255,0.02) 100%)',
@@ -95,7 +98,7 @@ export function ProjectsSection() {
                     className="object-cover transition-all duration-700 group-hover:scale-110 group-hover:brightness-110"
                   />
                   {/* Gradient overlay */}
-                  <div 
+                  <div
                     className={`absolute inset-0 bg-gradient-to-t ${project.gradient} opacity-0 group-hover:opacity-60 transition-opacity duration-500`}
                   />
                   {/* Bottom vignette */}
@@ -103,7 +106,7 @@ export function ProjectsSection() {
                 </div>
 
                 {/* Content with glassmorphism */}
-                <div 
+                <div
                   className="relative p-6"
                   style={{
                     background: 'linear-gradient(to bottom, rgba(255,255,255,0.03), transparent)',
@@ -115,9 +118,10 @@ export function ProjectsSection() {
                   <p className="text-muted-foreground text-sm leading-relaxed">
                     {project.description}
                   </p>
+                  <span className="text-purple-400">{project.techStack}</span>
 
                   {/* Decorative line */}
-                  <div 
+                  <div
                     className="absolute bottom-0 left-6 right-6 h-px opacity-0 group-hover:opacity-100 transition-opacity duration-500"
                     style={{
                       background: 'linear-gradient(90deg, transparent, rgba(147,51,234,0.5), transparent)',
